@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+BASE_DIR=/media/photography/Darktable
+$BASE_DIR/install/scripts/launch-linux.sh darktable
