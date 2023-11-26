@@ -22,3 +22,7 @@ that if I create a second version of a photo
 it won't be shown if I switch operating systems
 until I re-import the already imported folder,
 which is sometimes irritating.
+
+Main code here is the script which merges
+two `.darktablerc` files (or `.shortcutsrc`) to create one which includes the most recent changes:
+[`scripts/merge-config.py`](./scripts/merge-config.py).
