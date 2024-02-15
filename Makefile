@@ -12,7 +12,11 @@ darktable-git:
 	git clone --recurse-submodules $(GIT_URL) $@
 
 checkout-git-branch:
-	cd darktable-git; cat ../git-branch | xargs git checkout; touch .nobackup
+	cd darktable-git; \
+		git fetch --tags darktable; \
+		git submodule update --recursive; \
+		cat ../git-branch | xargs git checkout; \
+		touch .nobackup
 
 deps-ubuntu:
 	sudo bash scripts/deps-ubuntu-install.sh
